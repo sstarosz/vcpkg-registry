@@ -1,0 +1,6 @@
+{
+  "name": "maya-sdk",
+  "version-string": "Maya 2025 Update 3 win64 DevKit",
+  "description": "Vcpg port for the Autodesk Maya SDK",
+  "homepage": "https://aps.autodesk.com/developer/overview/maya"
+}
