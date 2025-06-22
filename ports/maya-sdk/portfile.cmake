@@ -1,10 +1,13 @@
+
+message(STATUS "Processing port: maya-sdk")
 vcpkg_download_distfile(ARCHIVE
     URLS "https://github.com/sstarosz/vcpkg-registry/releases/download/v0.1.0-alpha/Autodesk_Maya_2025_3_Update_DEVKIT_Windows.zip"
     FILENAME "Autodesk_Maya_2025_3_Update_DEVKIT_Windows.zip"
-    SHA512 e8cc4c739fe576d646e02f55ab87d5819eb238567f574014f1e333c92aa0e47d
+    SHA512 0C50BA1890F3ED68884289C4E04438A3FD10A4838D8046783C6CDF0A7A7AE8322572753EF61F1DB05C8EB6ABCF6225CDD45987467DAF38A0FA919E87DC383985
 )
 
 
+message(STATUS "Extracting source archive: ${ARCHIVE}")
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
     ARCHIVE "${ARCHIVE}"
@@ -17,4 +20,6 @@ vcpkg_extract_source_archive_ex(
     #   002_more_port_fixes.patch
 )
 
+
+message(STATUS "Source archive extracted to: ${SOURCE_PATH}")
 file(COPY "${SOURCE_PATH}/devkit/include" DESTINATION "${CURRENT_PACKAGES_DIR}")
