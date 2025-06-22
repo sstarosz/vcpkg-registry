@@ -1,7 +1,7 @@
 {
   "default": {
     "maya-sdk": {
-      "baseline": "1.0.0",
+      "baseline": "Maya 2025 Update 3 win64 DevKit",
       "port-version": 0
     }
   }
